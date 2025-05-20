@@ -1,0 +1,8 @@
+streamlit
+streamlit-drawable-canvas
+openai
+pandas
+python-dotenv
+Pillow
+fpdf
+langchain
