@@ -477,7 +477,7 @@ else:
             image = Image.fromarray(canvas_result.image_data.astype("uint8"), mode="RGBA").convert("RGB")
             if st.button("🚀 Отправить на проверку"):
                 base64_img, buffer = encode_image_from_canvas(image)
-                with st.spinner("GPT анализирует..."):
+                with st.spinner("Идет проверка решения..."):
                     result = analyze_with_gpt_vision(selected_problem, st.session_state.mark_scheme_text, base64_img)
                 # 💰 Только если успешно сгенерировано
                     st.session_state.spent_usd += COST_GENERATE
